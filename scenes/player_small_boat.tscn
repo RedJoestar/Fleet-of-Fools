@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdjjcfiaab465"]
+
+[ext_resource type="Texture2D" uid="uid://c2h21nukbvw5u" path="res://assets/sprites/small_player_boat.png" id="1_ojexa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2nwwv"]
+radius = 8.0
+
+[node name="player_small_boat" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ojexa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_2nwwv")
